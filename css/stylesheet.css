@@ -1,0 +1,51 @@
+/* import section */
+@import url('font-style.css');
+/* Variables section */
+:root {
+    --galaxy-color: #463B8A;
+    --orange-color: #FF7D00;
+    --accent-color: #8A7F3B;
+    --dark-galaxy-color: #1A143D;
+    --bg-grey-color: #1D1D1B;
+    --bg-page-color: #0E0C1C;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+}
+/* section general property color */
+.text-galaxy {
+    color: var(--galaxy-color);
+}
+/* General text elements */
+body {
+    font-family: 'Satoshi-Regular';
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white-color);
+    background-color: var(--bg-page-color);
+}
+
+h1, h2, h3 {
+    font-family: 'Satoshi-Bold';
+}
+
+h1 {
+    font-size: 64px;
+    letter-spacing: -2px;
+}
+h2 {
+    font-size: 48px;
+    letter-spacing: -1px;
+}
+h3 {
+    font-size: 40px;
+    letter-spacing: 0;
+}
+h5 {
+    font-family: 'Satoshi-Medium';
+    font-size: 32px;
+    line-height: 150%;
+}
+
+/*mobile style */
+@media screen and (max-device-width: 768px){
+}
