@@ -46,6 +46,34 @@ h5 {
     line-height: 150%;
 }
 
+.navbar li{
+    font-family: 'Satoshi-Medium';
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+}
+.navbar li > a {
+    color: var(--white-color);
+}
+.navbar li:hover, .navbar li.active {
+    border-bottom: 1px solid var(--white-color);
+}
+.navbar li:hover::after, .navbar li.active::after {
+    position: absolute;
+    bottom: -5px;
+    left: 46%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-page-color);
+    background-color: var(--white-color);
+}
+
+.bg-headpage {
+    background: url("../img/astronomy.jpg") no-repeat;
+    /*da continuare */
+}
 /*mobile style */
 @media screen and (max-device-width: 768px){
 }
