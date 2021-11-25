@@ -1,5 +1,6 @@
 /* import section */
 @import url('font-style.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
 /* Variables section */
 :root {
     --galaxy-color: #463B8A;
@@ -106,4 +107,32 @@ h5 {
 }
 /*mobile style */
 @media screen and (max-device-width: 768px){
+    .navbar-collapse {
+        position: fixed;
+        left: -1200px;
+        width: 80vw;
+        top: 0;
+        bottom: 0;
+        background-color: var(--galaxy-color);
+        transition: left 0.5s;
+    }
+    .navbar-collapse:after {
+        z-index: -1;
+        width: 20vw;
+        background-color: rgba(26,20,61,0.8);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -20vw;
+        content: '';
+    }
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 0.5s;
+    }
+    .navbar-collapse .close {
+        top: 6vw;
+        right: -13vw;
+        z-index: 5;
+    }
 }
