@@ -1,7 +1,10 @@
 /* import section */
+
 @import url('font-style.css');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+
 /* Variables section */
+
 :root {
     --galaxy-color: #463B8A;
     --orange-color: #FF7D00;
@@ -12,11 +15,17 @@
     --white-color: #FFFFFF;
     --black-color: #000000;
 }
+
+
 /* section general property color */
+
 .text-galaxy {
     color: var(--galaxy-color);
 }
+
+
 /* General text elements */
+
 body {
     font-family: 'Satoshi-Regular';
     font-size: 16px;
@@ -25,7 +34,9 @@ body {
     background-color: var(--bg-page-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Satoshi-Bold';
 }
 
@@ -33,33 +44,39 @@ h1 {
     font-size: 64px;
     letter-spacing: -2px;
 }
+
 h2 {
     font-size: 48px;
     letter-spacing: -1px;
 }
+
 h3 {
     font-size: 40px;
     letter-spacing: 0;
 }
+
 h5 {
     font-family: 'Satoshi-Medium';
     font-size: 32px;
     line-height: 150%;
 }
 
-.navbar li{
+.navbar li {
     font-family: 'Satoshi-Medium';
     font-size: 16px;
     text-transform: uppercase;
     position: relative;
 }
-.navbar li > a {
-    color: var(--white-color);
+
+.navbar li>a {
+    color: var(--white-color) !important;
 }
-.navbar li:hover, .navbar li.active {
+
+.navbar li:hover {
     border-bottom: 1px solid var(--white-color);
 }
-.navbar li:hover::after, .navbar li.active::after {
+
+.navbar li:hover::after {
     position: absolute;
     bottom: -5px;
     left: 46%;
@@ -71,6 +88,10 @@ h5 {
     background-color: var(--white-color);
 }
 
+.navbar li.active>a {
+    color: var(--orange-color) !important;
+}
+
 .bg-headpage {
     background: url('../img/astronomy.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -80,6 +101,7 @@ h5 {
     height: 500px;
     padding-top: 70px;
 }
+
 .bg-headpage::before {
     content: '';
     position: absolute;
@@ -87,26 +109,92 @@ h5 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
+
 .breadcrumb-item+.breadcrumb-item::before {
     content: '>';
     color: var(--white-color);
 }
+
 .title-head {
     border-bottom: 2px solid var(--white-color);
 }
+
 .title-head::before {
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -4px;
     content: '';
     width: 6px;
     height: 6px;
     background-color: var(--white-color);
+    transform: rotate(45deg);
 }
-/*mobile style */
-@media screen and (max-device-width: 768px){
+
+
+/*
+    Component card origins and observatory
+*/
+
+
+/*
+    Card_left_origins_observatory_head is made of head, a line below the head, paragraphs, and an svg/img on the right;
+    Card_right_origins_observatory_head is made of head, a line below the head, paragraphs, and an svg/img on the right.
+*/
+
+.card_left_origins_observatory_head,
+.card_right_origins_observatory_head {
+    border-bottom: 2px solid var(--white-color);
+}
+
+.card_left_origins_observatory_head::before {
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--white-color);
+    transform: rotate(45deg);
+}
+
+.card_origins_observatory_img {
+    width: 100%;
+    height: 80%;
+}
+
+.card_right_origins_observatory_head::before {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--white-color);
+    transform: rotate(45deg);
+}
+
+
+/*
+    Card_environment is made of an img (triangle and squared shapes), title, paragraph
+*/
+
+.card_environment_img {
+    width: 100%;
+    height: 100%;
+}
+
+.card_environment_head {
+    text-align: center;
+}
+
+
+/*
+    Mobile style
+*/
+
+@media screen and (max-device-width: 768px) {
     .navbar-collapse {
         position: fixed;
         left: -1200px;
@@ -119,7 +207,7 @@ h5 {
     .navbar-collapse:after {
         z-index: -1;
         width: 20vw;
-        background-color: rgba(26,20,61,0.8);
+        background-color: rgba(26, 20, 61, 0.8);
         position: absolute;
         top: 0;
         bottom: 0;
@@ -134,22 +222,5 @@ h5 {
         top: 6vw;
         right: -13vw;
         z-index: 5;
-    }
-}
-
-#img_left_origins {
-    width: 100%;
-    height: 80%;
- 
-}
-
-card_left_origins h3::before{
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        content: '';
-        width: 6px;
-        height: 6px;
-        background-color: var(--white-color);
     }
 }

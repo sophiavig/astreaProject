@@ -8,12 +8,12 @@ function activeElement(idAttivo){
     attiva.classList.add("active");
 }
 function runOnScroll() {
-    let head = document.getElementsByTagName("header")[0];
-    if (window.scrollY >= 200) {
-        head.style.backgroundColor = "#0E0C1C";
+    let head = document.getElementsByTagName("header")[0];   
+    if (window.scrollY >= 500) {
+        head.style.backgroundColor = "#0E0C1C";        
     } else {
         head.style.backgroundColor = "transparent";
-    }
+    }    
 };
 window.addEventListener("scroll", runOnScroll);
 
