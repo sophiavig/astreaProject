@@ -9,7 +9,7 @@ function activeElement(idAttivo){
 }
 function runOnScroll() {
     let head = document.getElementsByTagName("header")[0];   
-    if (window.scrollY >= 500) {
+    if (window.scrollY >= 100) {
         head.style.backgroundColor = "#0E0C1C";        
     } else {
         head.style.backgroundColor = "transparent";

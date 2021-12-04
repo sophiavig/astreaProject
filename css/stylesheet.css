@@ -33,18 +33,18 @@ body {
     color: var(--white-color);
     background-color: var(--bg-page-color);
 }
-
-@media only screen and (min-width: 992px) {
-    body {
-        background-image: url('../img/bg.jpg');
-        background-repeat: repeat-y;
-        background-size: 100%;
-    }
+/* buttons style */
+.button-secondary {
+    background-color: transparent;
+    border: 1px solid var(--orange-color);
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: var(--orange-color);
+    font-size: 14px;
+    font-weight: 700;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: 'Satoshi-Bold';
 }
 
@@ -129,7 +129,7 @@ h5 {
     border-bottom: 2px solid var(--white-color);
 }
 
-.title-head::before {
+.title-head::before, .collapse .navbar-brand::before {
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -138,6 +138,16 @@ h5 {
     height: 6px;
     background-color: var(--white-color);
     transform: rotate(45deg);
+}
+.mobile-close-Btn {
+    right: -20%;
+    top: 30px;
+}
+i.lg-icon {
+    font-size: 48px;
+}
+i.md-icon {
+    font-size: 32px;
 }
 
 
@@ -197,12 +207,42 @@ h5 {
     text-align: center;
 }
 
+.card-triangle_element {
+    border-right: 4rem solid transparent;
+    border-top: 12rem solid var(--bg-grey-color);
+    border-bottom: 4rem solid transparent;
+    min-height: 200px;
+    border-radius: 10px;
+    margin-left: -3rem;
+    z-index: -1;
+}
+.card-triangle_description {
+    margin-top: -11rem;
+    margin-left: 4rem;
+}
+.card-triangle_right .card-triangle_element {
+    margin-right: -3rem;
+    margin-left: 0;
+    border-left: 4rem solid transparent;
+    border-right: 0;
+}
+.card-triangle_right .card-triangle_description{
+    margin-right: 4rem;
+    margin-left: 0;
+}
 
 /*
     Mobile style
 */
 
-@media screen and (max-device-width: 768px) {
+@media only screen and (min-width: 992px) {
+    body {
+        background-image: url('../img/bg.jpg');
+        background-repeat: repeat-y;
+        background-size: 100%;
+    }
+}
+@media screen and (max-device-width: 992px) {
     .navbar-collapse {
         position: fixed;
         left: -1200px;
@@ -230,5 +270,28 @@ h5 {
         top: 6vw;
         right: -13vw;
         z-index: 5;
+    }
+    .home-card-triangle {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-card-triangle.card-triangle_right {
+        flex-direction: column-reverse;
+    }
+
+    .card-triangle_element {
+        border: 0;
+        margin-left: 0;
+        border-radius: 0;
+        margin-top: -5rem;
+        background-color: var(--bg-grey-color);
+    }
+    .card-triangle_description {
+        margin-top: 5rem;
+        margin-left: 0;
+    }
+    .card-triangle_right .card-triangle_element, .card-triangle_right .card-triangle_description {
+        margin-right: 0;
+        border: 0;
     }
 }
