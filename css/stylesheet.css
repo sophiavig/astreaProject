@@ -22,6 +22,9 @@
 .text-galaxy {
     color: var(--galaxy-color);
 }
+.text-orange-color {
+    color: var(--orange-color);
+}
 
 
 /* General text elements */
@@ -43,6 +46,11 @@ body {
     font-size: 14px;
     font-weight: 700;
 }
+.button-secondary:hover {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+
+}
 
 h1, h2, h3 {
     font-family: 'Satoshi-Bold';
@@ -61,6 +69,7 @@ h2 {
 h3 {
     font-size: 40px;
     letter-spacing: 0;
+    line-height: 100%;
 }
 
 h5 {
@@ -150,6 +159,25 @@ i.md-icon {
     font-size: 32px;
 }
 
+/* footer style */
+.footer-page {
+    background: url('../img/footer_img.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+    padding-top: 100px;
+}
+.footer-page::before {
+    background-color: rgba(29,29,27, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    content: '';
+}
 
 /*
     Component card origins and observatory
@@ -214,7 +242,10 @@ i.md-icon {
     min-height: 200px;
     border-radius: 10px;
     margin-left: -3rem;
-    z-index: -1;
+    z-index: 0;
+}
+.home-card-triangle img {
+    z-index: 1;
 }
 .card-triangle_description {
     margin-top: -11rem;
@@ -277,6 +308,21 @@ i.md-icon {
     }
     .home-card-triangle.card-triangle_right {
         flex-direction: column-reverse;
+    }
+    .footer-page {
+        padding-top: 45px;
+    }
+    .footer_bottom-el {
+        flex-direction: column-reverse;
+    }
+    .footer_bottom-el .justify-content-end {
+        justify-content: center!important;
+    }
+    .footer-page .footer_btn-subscribe {
+        text-align: center;
+    }
+    #footer-description {
+        display: none;
     }
 
     .card-triangle_element {
