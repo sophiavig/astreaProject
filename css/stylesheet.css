@@ -126,9 +126,15 @@ h5 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
 }
-
+.bg-head_home {
+    background-image: url('../img/home-background.jpg');
+    height: 830px;
+}
+.bg-head_home .title-head {
+    margin-top: 12rem;
+}
 .breadcrumb-item+.breadcrumb-item::before {
     content: '>';
     color: var(--white-color);
