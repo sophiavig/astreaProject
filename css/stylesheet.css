@@ -324,7 +324,9 @@ i.md-icon {
     #footer-description {
         display: none;
     }
-
+    #home_carouselCommunity .carousel-item {
+        min-height: 200px;
+    }
     .card-triangle_element {
         border: 0;
         margin-left: 0;
