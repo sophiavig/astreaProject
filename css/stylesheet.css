@@ -37,19 +37,28 @@ body {
     background-color: var(--bg-page-color);
 }
 /* buttons style */
-.button-secondary {
-    background-color: transparent;
-    border: 1px solid var(--orange-color);
+.button-base {
     text-transform: uppercase;
     border-radius: 8px;
-    color: var(--orange-color);
+    background-color: transparent;
     font-size: 14px;
     font-weight: 700;
+}
+.button-secondary {
+    border: 1px solid var(--orange-color);
+    color: var(--orange-color);
 }
 .button-secondary:hover {
     background-color: var(--orange-color);
     color: var(--white-color);
-
+}
+.button-white {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+.button-white:hover {
+    background-color: var(--white-color);
+    color: var(--orange-color);
 }
 
 h1, h2, h3 {
@@ -89,11 +98,11 @@ h5 {
     color: var(--white-color) !important;
 }
 
-.navbar li:hover {
+.navbar li:hover, .navbar li.active {
     border-bottom: 1px solid var(--white-color);
 }
 
-.navbar li:hover::after {
+.navbar li:hover::after, .navbar li.active::after {
     position: absolute;
     bottom: -5px;
     left: 46%;
@@ -135,6 +144,10 @@ h5 {
 .bg-head_home .title-head {
     margin-top: 12rem;
 }
+.bg-astreafest {
+    background-image: url('../img/astreafest-background.jpg');
+}
+
 .breadcrumb-item+.breadcrumb-item::before {
     content: '>';
     color: var(--white-color);
@@ -268,6 +281,18 @@ i.md-icon {
     margin-left: 0;
 }
 
+/* astreafest section */
+.card-astreafest::before {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--white-color);
+    transform: rotate(45deg);
+}
+
 /*
     Mobile style
 */
@@ -280,6 +305,9 @@ i.md-icon {
     }
 }
 @media screen and (max-device-width: 992px) {
+    h3 {
+        font-size: 26px;
+    }
     .navbar-collapse {
         position: fixed;
         left: -1200px;
