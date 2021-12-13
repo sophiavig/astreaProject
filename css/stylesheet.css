@@ -141,6 +141,13 @@ h5 {
     background-image: url('../img/home-background.jpg');
     height: 830px;
 }
+
+.bg-head_services {
+    background-image: url('../img/services-header.png');
+}
+.bg-head_origins {
+    background-image: url('../img/origins-header.png');
+}
 .bg-head_home .title-head {
     margin-top: 12rem;
 }
@@ -280,6 +287,32 @@ i.md-icon {
     margin-right: 4rem;
     margin-left: 0;
 }
+
+/* services section */
+
+.card-intro {
+    width: 100%;
+    height: 100%;
+}
+
+h4{
+    position:absolute;
+    bottom: 55%;
+    left: 25%;
+    z-index: auto;
+    
+}
+
+.tourism:hover, .obs:hover  {
+    filter: grayscale(100%);
+    
+}
+
+.tourism a:hover, .obs a:hover {
+    font-weight: bolder;
+    
+}
+
 
 /* astreafest section */
 .card-astreafest::before {
