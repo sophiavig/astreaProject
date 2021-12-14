@@ -264,9 +264,8 @@ i.md-icon {
 }
 
 .card-triangle_element {
-    border-right: 4rem solid transparent;
-    border-top: 12rem solid var(--bg-grey-color);
-    border-bottom: 4rem solid transparent;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    background-color: var(--bg-grey-color);
     min-height: 200px;
     border-radius: 10px;
     margin-left: -3rem;
@@ -276,18 +275,12 @@ i.md-icon {
     z-index: 1;
 }
 .card-triangle_description {
-    margin-top: -11rem;
-    margin-left: 4rem;
+    margin: 0 5rem;
 }
 .card-triangle_right .card-triangle_element {
     margin-right: -3rem;
     margin-left: 0;
-    border-left: 4rem solid transparent;
-    border-right: 0;
-}
-.card-triangle_right .card-triangle_description{
-    margin-right: 4rem;
-    margin-left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
 }
 
 /* services section */
@@ -318,16 +311,12 @@ h4{
 /* observatory-tourism section */
 
 .obs-tourism_card-event {
-    border-right: 6rem solid transparent;
-    border-top: 20rem solid var(--bg-grey-color);
-    border-bottom: 1rem solid transparent;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+    background-color: var(--bg-grey-color);
     min-height: 200px;
     border-radius: 10px;
     margin-left: 0;
     z-index: 0;
-}
-.card-event_description {
-    margin-top: -19rem;
 }
 .card-event_description img {
     height: 100%;
@@ -414,31 +403,24 @@ h4{
     #home_carouselCommunity .carousel-item {
         min-height: 200px;
     }
-    .card-triangle_element {
-        border: 0;
+    .card-triangle_element, .obs-tourism_card-event {
         margin-left: 0;
         border-radius: 0;
         margin-top: -5rem;
-        background-color: var(--bg-grey-color);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    .card-triangle_right .card-triangle_element, .card-triangle_element {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    }
+    .card-triangle_right .card-triangle_element {
+        margin-right: 0;
     }
     .card-triangle_description {
-        margin-top: 5rem;
-        margin-left: 0;
-    }
-    .card-triangle_right .card-triangle_element, .card-triangle_right .card-triangle_description {
-        margin-right: 0;
-        border: 0;
-    }
-
-    .card-event_element {
-        border: 0;
-        margin-left: 0;
-        border-radius: 0;
-        margin-top: -5rem;
-        background-color: var(--bg-grey-color);
+        margin: 5rem 0;
     }
     .card-event_description {
-        margin-top: 5rem;
+        margin-top: 2rem;
         margin-left: 0;
+        margin-right: 0;
     }
 }
