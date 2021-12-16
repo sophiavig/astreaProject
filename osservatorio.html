@@ -89,38 +89,51 @@
 	</div>
 	<div class="my-5">
 		<div class="container px-0">
+			<ul class="nav nav-pills mb-3 justify-content-end" id="pills-tab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<a class="nav-link active text-uppercase" id="descrizione-tab" data-toggle="pill" href="#descrizione" role="tab" aria-controls="pills-home" aria-selected="true">Descrizione</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link text-uppercase" id="eventi-tab" data-toggle="pill" href="#eventi" role="tab" aria-controls="pills-profile" aria-selected="false">Prossimi eventi</a>
+				</li>
+			</ul>
 		</div>
-		<div class="col-lg-10 col-12 ml-lg-auto px-0 px-lg-3">
-			<div class="obs-tourism_card-event col-12 my-5">
-				<div class="card-event_element py-3 py-md-0">
-					<div class="card-event_description py-lg-4 col-lg-10 row">
-						<div class="col-lg-4 col-8 mx-auto text-center">
-							<img src="img/shape.svg" class="mr-4">
-						</div>
-						<div class="col-lg-8 d-flex flex-column justify-content-between">
-							<div>
-								<h2>Stelle e costellazioni</h2>
-								<p class="mb-lg-5">Ammira le stelle da vicino e scopri le
-									numerose costellazioni che tipicamente vediamo dalla terra.
-								</p>
-							</div>
-							<div class="d-lg-flex justify-content-between">
-								<div class="col-9 mx-auto mx-lg-0">
-									<p class="mb-2">
-										<i class="bi bi-calendar"></i>
-										<span>Giovedì 2 dicembre</span>
-									</p>
-									<p class="mb-1">
-										<i class="bi bi-clock"></i>
-										<span>11:00 - 12:00</span>
-									</p>
-
+		<div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="descrizione" role="tabpanel" aria-labelledby="descrizione-tab">Descrizione</div>
+			<div class="tab-pane fade" id="eventi" role="tabpanel" aria-labelledby="eventi-tab">
+				<div class="col-lg-10 col-12 ml-lg-auto px-0 px-lg-3">
+					<div class="obs-tourism_card-event col-12 my-5">
+						<div class="card-event_element py-3 py-md-0">
+							<div class="card-event_description py-lg-4 col-lg-10 row">
+								<div class="col-lg-4 col-8 mx-auto text-center">
+									<img src="img/shape.svg" class="mr-4">
 								</div>
-								<div class="mt-3 mt-lg-0 text-center text-lg-left">
-									<button
-										class="button-base button-secondary py-2 px-5">Prenota</button>
-								</div>
+								<div class="col-lg-8 d-flex flex-column justify-content-between">
+									<div>
+										<h2>Stelle e costellazioni</h2>
+										<p class="mb-lg-5">Ammira le stelle da vicino e scopri le
+											numerose costellazioni che tipicamente vediamo dalla terra.
+										</p>
+									</div>
+									<div class="d-lg-flex justify-content-between">
+										<div class="col-9 mx-auto mx-lg-0">
+											<p class="mb-2">
+												<i class="bi bi-calendar"></i>
+												<span>Giovedì 2 dicembre</span>
+											</p>
+											<p class="mb-1">
+												<i class="bi bi-clock"></i>
+												<span>11:00 - 12:00</span>
+											</p>
 
+										</div>
+										<div class="mt-3 mt-lg-0 text-center text-lg-left">
+											<button
+													class="button-base button-secondary py-2 px-5">Prenota</button>
+										</div>
+
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

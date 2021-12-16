@@ -224,7 +224,13 @@ i.md-icon {
 /*
     Component card origins and observatory
 */
-
+.nav-pills .nav-link {
+    color: var(--white-color);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: var(--orange-color);
+}
 
 /*
     Card_left_origins_observatory_head is made of head, a line below the head, paragraphs, and an svg/img on the right;
