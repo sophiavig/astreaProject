@@ -437,6 +437,12 @@ i.md-icon {
         right: -13vw;
         z-index: 5;
     }
+    .navbar li:hover, .navbar li.active {
+        border: 0;
+    }
+    .navbar li:hover::after, .navbar li.active::after {
+        content: none;
+    }
     .home-card-triangle {
         flex-direction: column;
         justify-content: center;
@@ -474,8 +480,11 @@ i.md-icon {
         margin-top: -7rem;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
-    .card-triangle_right .card-triangle_element, .card-triangle_element {
+    .card-triangle_right .card-triangle_element, .card-triangle_element, .obs-tourism_card-event {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    }
+    .obs-tourism_card-event h2 {
+        font-size: 20px;
     }
     .card-triangle_right .card-triangle_element {
         margin-right: 0;
