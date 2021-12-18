@@ -481,6 +481,11 @@ i.md-icon {
   position: absolute;
   top: 0;
   z-index: -1;
+  background-color: var(--bg-page-color);
+}
+
+#earth canvas {
+  mix-blend-mode: lighten;
 }
 
 /**
