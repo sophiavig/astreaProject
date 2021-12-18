@@ -22,6 +22,7 @@
 .text-galaxy {
     color: var(--galaxy-color);
 }
+
 .text-orange-color {
     color: var(--orange-color);
 }
@@ -36,7 +37,10 @@ body {
     color: var(--white-color);
     background-color: var(--bg-page-color);
 }
+
+
 /* buttons style */
+
 .button-base {
     text-transform: uppercase;
     border-radius: 8px;
@@ -44,24 +48,30 @@ body {
     font-size: 14px;
     font-weight: 700;
 }
+
 .button-secondary {
     border: 1px solid var(--orange-color);
     color: var(--orange-color);
 }
+
 .button-secondary:hover {
     background-color: var(--orange-color);
     color: var(--white-color);
 }
+
 .button-white {
     border: 1px solid var(--white-color);
     color: var(--white-color);
 }
+
 .button-white:hover {
     background-color: var(--white-color);
     color: var(--orange-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Satoshi-Bold';
 }
 
@@ -86,9 +96,11 @@ h5 {
     font-size: 32px;
     line-height: 150%;
 }
+
 .text-small {
     font-size: 12px;
 }
+
 .navbar li {
     font-family: 'Satoshi-Medium';
     font-size: 16px;
@@ -100,11 +112,13 @@ h5 {
     color: var(--white-color) !important;
 }
 
-.navbar li:hover, .navbar li.active {
+.navbar li:hover,
+.navbar li.active {
     border-bottom: 1px solid var(--white-color);
 }
 
-.navbar li:hover::after, .navbar li.active::after {
+.navbar li:hover::after,
+.navbar li.active::after {
     position: absolute;
     bottom: -5px;
     left: 46%;
@@ -130,7 +144,8 @@ h5 {
     padding-top: 70px;
 }
 
-.bg-headpage::before, .community_card::before {
+.bg-headpage::before,
+.community_card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -139,6 +154,7 @@ h5 {
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .bg-head_home {
     background-image: url('../img/home-background.jpg');
     height: 830px;
@@ -147,21 +163,27 @@ h5 {
 .bg-head_services {
     background-image: url('../img/services-header.png');
 }
+
 .bg-head_origins {
     background-image: url('../img/origins-header.png');
 }
+
 .bg-head_observatory {
     background-image: url('../img/osservatorio-background.jpg');
 }
+
 .bg-head_tourism {
     background-image: url('../img/tourism-background.jpg');
 }
+
 .bg-head_community {
     background-image: url('../img/community-background.jpg');
 }
+
 .bg-head_home .title-head {
     margin-top: 12rem;
 }
+
 .bg-astreafest {
     background-image: url('../img/astreafest-background.jpg');
 }
@@ -174,13 +196,15 @@ h5 {
 .title-head {
     border-bottom: 2px solid var(--white-color);
 }
+
 .head-cit {
     bottom: 0;
     left: 0;
     right: 0;
 }
 
-.title-head::before, .collapse .navbar-brand::before {
+.title-head::before,
+.collapse .navbar-brand::before {
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -190,18 +214,23 @@ h5 {
     background-color: var(--white-color);
     transform: rotate(45deg);
 }
+
 .mobile-close-Btn {
     right: -20%;
     top: 30px;
 }
+
 i.lg-icon {
     font-size: 48px;
 }
+
 i.md-icon {
     font-size: 32px;
 }
 
+
 /* footer style */
+
 .footer-page {
     background: url('../img/footer_img.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -211,8 +240,9 @@ i.md-icon {
     min-height: 500px;
     padding-top: 100px;
 }
+
 .footer-page::before {
-    background-color: rgba(29,29,27, 0.2);
+    background-color: rgba(29, 29, 27, 0.2);
     position: absolute;
     top: 0;
     left: 0;
@@ -221,16 +251,21 @@ i.md-icon {
     content: '';
 }
 
+
 /*
     Component card origins and observatory
 */
+
 .nav-pills .nav-link {
     color: var(--white-color);
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: transparent;
     color: var(--orange-color);
 }
+
 
 /*
     Card_left_origins_observatory_head is made of head, a line below the head, paragraphs, and an svg/img on the right;
@@ -241,6 +276,7 @@ i.md-icon {
 .card_right_origins_observatory_head {
     border-bottom: 2px solid var(--white-color);
 }
+
 .card_left_origins_observatory_head::before {
     position: absolute;
     right: 0;
@@ -267,6 +303,14 @@ i.md-icon {
     transform: rotate(45deg);
 }
 
+.indentation-left {
+    padding-left: 9rem;
+}
+
+.indentation-right {
+    padding-right: 9rem;
+}
+
 
 /*
     Card_environment is made of an img (triangle and squared shapes), title, paragraph
@@ -280,8 +324,13 @@ i.md-icon {
 .card_environment_head {
     text-align: center;
 }
+
+
 /* HOME */
+
+
 /* card for elements of list in home */
+
 .card-triangle_element {
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     background-color: var(--bg-grey-color);
@@ -290,9 +339,11 @@ i.md-icon {
     margin-left: 5rem;
     z-index: 0;
 }
+
 .home-card-triangle {
     margin-top: 10rem;
 }
+
 .home-card-triangle img {
     z-index: 1;
     position: absolute;
@@ -300,27 +351,34 @@ i.md-icon {
     left: -20%;
     width: 55%;
 }
+
 .card-triangle_right img {
     left: auto;
     right: -20%;
 }
+
 .card-triangle_description {
     margin: 0 8rem;
 }
+
 .card-triangle_right .card-triangle_element {
     margin-right: 5rem;
     margin-left: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
 }
 
+
 /* card astreafest in home */
+
 .home-astreafest img {
     width: 100%;
 }
+
 .home-astreafest_description {
     top: 32%;
     left: 21%;
 }
+
 
 /* services section */
 
@@ -329,22 +387,23 @@ i.md-icon {
     height: 100%;
 }
 
-.service_title{
-    position:absolute;
+.service_title {
+    position: absolute;
     bottom: 55%;
     left: 25%;
     z-index: auto;
-    
 }
 
-.tourism:hover, .obs:hover  {
+.tourism:hover,
+.obs:hover {
     filter: grayscale(100%);
-    
 }
 
-.tourism a:hover, .obs a:hover {
+.tourism a:hover,
+.obs a:hover {
     font-weight: bolder;
 }
+
 
 /* observatory-tourism section */
 
@@ -356,12 +415,15 @@ i.md-icon {
     margin-left: 0;
     z-index: 0;
 }
+
 .card-event_description img {
     height: 100%;
     max-height: 280px;
 }
 
+
 /* astreafest section */
+
 .card-astreafest::before {
     position: absolute;
     left: 0;
@@ -372,28 +434,39 @@ i.md-icon {
     background-color: var(--white-color);
     transform: rotate(45deg);
 }
+
+
 /* community section */
+
 .community_card-title {
     bottom: 0;
     left: 0;
 }
+
 .community_card-title p {
     font-size: 20px;
     font-family: 'Satoshi-Bold';
 }
+
 .community_card-title i {
     font-size: 1.5rem;
 }
+
 .community_card-img {
     height: 280px;
     width: 190px;
     object-fit: cover;
 }
+
+
 /* modals section */
+
 .modal_tourism {
     background-color: var(--galaxy-color);
     color: var(--white-color);
 }
+
+
 /*
     Mobile style
 */
@@ -405,6 +478,7 @@ i.md-icon {
         background-size: 100%;
     }
 }
+
 @media screen and (max-device-width: 992px) {
     h3 {
         font-size: 26px;
@@ -468,13 +542,15 @@ i.md-icon {
     #home_carouselCommunity .carousel-item {
         min-height: 200px;
     }
-    .card-triangle_element, .obs-tourism_card-event {
+    .card-triangle_element,
+    .obs-tourism_card-event {
         margin-left: 0;
         border-radius: 0;
         margin-top: -7rem;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
-    .card-triangle_right .card-triangle_element, .card-triangle_element {
+    .card-triangle_right .card-triangle_element,
+    .card-triangle_element {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     }
     .card-triangle_right .card-triangle_element {
