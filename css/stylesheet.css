@@ -311,6 +311,12 @@ i.md-icon {
     padding-right: 9rem;
 }
 
+.capt-img p {
+    background-color: black;
+    opacity: 55%;
+    padding: 5%;
+}
+
 
 /*
     Card_environment is made of an img (triangle and squared shapes), title, paragraph
