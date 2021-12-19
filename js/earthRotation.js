@@ -1,4 +1,9 @@
 /**
+ * Inspired by Bryan Jones
+ * @see https://codepen.io/bartuc/pen/yMMyav
+ */
+
+/**
  * @file
  * The main scene.
  */
@@ -147,13 +152,13 @@
    scene.add( light5 );
 
    // Add the Earth sphere model.
-   console.log(earthRadius)
    var geometry = new THREE.SphereGeometry( earthRadius, 128, 128 );
 
    // Create the Earth materials.
    loader = new THREE.TextureLoader();
    loader.setCrossOrigin( 'https://s.codepen.io' );
-   var texture = loader.load( TEXTURE_PATH + 'ColorMap.jpg' );
+   //var texture = loader.load( TEXTURE_PATH + 'ColorMap.jpg' );
+   var texture = loader.load( '../img/ColorMap.jpg' );
 
    var bump = null;
    bump = loader.load( TEXTURE_PATH + 'Bump.jpg' );
@@ -185,7 +190,8 @@
 
    loader = new THREE.TextureLoader();
    loader.setCrossOrigin( 'https://s.codepen.io' );
-   var alpha = loader.load( TEXTURE_PATH + "alphaMap.jpg" );
+   //var alpha = loader.load( TEXTURE_PATH + "alphaMap.jpg" );
+   var alpha = loader.load( '../img/fair_clouds_4k.jpg' );
 
    var materialCloud = new THREE.MeshPhongMaterial({
      alphaMap: alpha,
