@@ -22,6 +22,7 @@
 .text-galaxy {
     color: var(--galaxy-color);
 }
+
 .text-orange-color {
     color: var(--orange-color);
 }
@@ -36,7 +37,10 @@ body {
     color: var(--white-color);
     background-color: var(--bg-page-color);
 }
+
+
 /* buttons style */
+
 .button-base {
     text-transform: uppercase;
     border-radius: 8px;
@@ -44,24 +48,30 @@ body {
     font-size: 14px;
     font-weight: 700;
 }
+
 .button-secondary {
     border: 1px solid var(--orange-color);
     color: var(--orange-color);
 }
+
 .button-secondary:hover {
     background-color: var(--orange-color);
     color: var(--white-color);
 }
+
 .button-white {
     border: 1px solid var(--white-color);
     color: var(--white-color);
 }
+
 .button-white:hover {
     background-color: var(--white-color);
     color: var(--orange-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Satoshi-Bold';
 }
 
@@ -86,9 +96,15 @@ h5 {
     font-size: 32px;
     line-height: 150%;
 }
+
 .text-small {
     font-size: 12px;
 }
+
+strong {
+    font-family: 'Satoshi-Bold';
+}
+
 .navbar li {
     font-family: 'Satoshi-Medium';
     font-size: 16px;
@@ -100,11 +116,13 @@ h5 {
     color: var(--white-color) !important;
 }
 
-.navbar li:hover, .navbar li.active {
+.navbar li:hover,
+.navbar li.active {
     border-bottom: 1px solid var(--white-color);
 }
 
-.navbar li:hover::after, .navbar li.active::after {
+.navbar li:hover::after,
+.navbar li.active::after {
     position: absolute;
     bottom: -5px;
     left: 46%;
@@ -130,7 +148,8 @@ h5 {
     padding-top: 70px;
 }
 
-.bg-headpage::before, .community_card::before {
+.bg-headpage::before,
+.community_card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -139,6 +158,7 @@ h5 {
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .bg-head_home {
     background-image: url('../img/home-background.jpg');
     height: 830px;
@@ -147,21 +167,33 @@ h5 {
 .bg-head_services {
     background-image: url('../img/services-header.png');
 }
+
+.bg-head_reach-us {
+    height: 700px;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
 .bg-head_origins {
     background-image: url('../img/origins-header.png');
 }
+
 .bg-head_observatory {
     background-image: url('../img/osservatorio-background.jpg');
 }
+
 .bg-head_tourism {
     background-image: url('../img/tourism-background.jpg');
 }
+
 .bg-head_community {
     background-image: url('../img/community-background.jpg');
 }
+
 .bg-head_home .title-head {
     margin-top: 12rem;
 }
+
 .bg-astreafest {
     background-image: url('../img/astreafest-background.jpg');
 }
@@ -174,13 +206,15 @@ h5 {
 .title-head {
     border-bottom: 2px solid var(--white-color);
 }
+
 .head-cit {
     bottom: 0;
     left: 0;
     right: 0;
 }
 
-.title-head::before, .collapse .navbar-brand::before {
+.title-head::before,
+.collapse .navbar-brand::before {
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -190,18 +224,23 @@ h5 {
     background-color: var(--white-color);
     transform: rotate(45deg);
 }
+
 .mobile-close-Btn {
     right: -20%;
     top: 30px;
 }
+
 i.lg-icon {
     font-size: 48px;
 }
+
 i.md-icon {
     font-size: 32px;
 }
 
+
 /* footer style */
+
 .footer-page {
     background: url('../img/footer_img.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -211,8 +250,9 @@ i.md-icon {
     min-height: 500px;
     padding-top: 100px;
 }
+
 .footer-page::before {
-    background-color: rgba(29,29,27, 0.2);
+    background-color: rgba(29, 29, 27, 0.2);
     position: absolute;
     top: 0;
     left: 0;
@@ -221,16 +261,21 @@ i.md-icon {
     content: '';
 }
 
+
 /*
     Component card origins and observatory
 */
+
 .nav-pills .nav-link {
     color: var(--white-color);
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: transparent;
     color: var(--orange-color);
 }
+
 
 /*
     Card_left_origins_observatory_head is made of head, a line below the head, paragraphs, and an svg/img on the right;
@@ -241,6 +286,7 @@ i.md-icon {
 .card_right_origins_observatory_head {
     border-bottom: 2px solid var(--white-color);
 }
+
 .card_left_origins_observatory_head::before {
     position: absolute;
     right: 0;
@@ -267,6 +313,12 @@ i.md-icon {
     transform: rotate(45deg);
 }
 
+.capt-img p {
+    background-color: black;
+    opacity: 55%;
+    padding: 5%;
+}
+
 
 /*
     Card_environment is made of an img (triangle and squared shapes), title, paragraph
@@ -280,8 +332,17 @@ i.md-icon {
 .card_environment_head {
     text-align: center;
 }
+
+.card_environment_head h4 {
+    color: var(--orange-color) !important;
+}
+
+
 /* HOME */
+
+
 /* card for elements of list in home */
+
 .card-triangle_element {
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     background-color: var(--bg-grey-color);
@@ -290,9 +351,11 @@ i.md-icon {
     margin-left: 5rem;
     z-index: 0;
 }
+
 .home-card-triangle {
     margin-top: 10rem;
 }
+
 .home-card-triangle img {
     z-index: 1;
     position: absolute;
@@ -300,27 +363,34 @@ i.md-icon {
     left: -16%;
     width: 55%;
 }
+
 .card-triangle_right img {
     left: auto;
     right: -16%;
 }
+
 .card-triangle_description {
     margin: 0 8rem;
 }
+
 .card-triangle_right .card-triangle_element {
     margin-right: 5rem;
     margin-left: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
 }
 
+
 /* card astreafest in home */
+
 .home-astreafest img {
     width: 100%;
 }
+
 .home-astreafest_description {
     top: 32%;
     left: 21%;
 }
+
 
 /* services section */
 
@@ -329,22 +399,24 @@ i.md-icon {
     height: 100%;
 }
 
-.service_title{
-    position:absolute;
-    bottom: 55%;
-    left: 25%;
+.service_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     z-index: auto;
-    
+    color: white;
 }
 
-.tourism:hover, .obs:hover  {
+.link-img:hover img {
     filter: grayscale(100%);
-    
 }
 
-.tourism a:hover, .obs a:hover {
+.link-img:hover h4 {
     font-weight: bolder;
+    color: var(--orange-color);
 }
+
 
 /* observatory-tourism section */
 
@@ -356,12 +428,15 @@ i.md-icon {
     margin-left: 0;
     z-index: 0;
 }
+
 .card-event_description img {
     height: 100%;
     max-height: 280px;
 }
 
+
 /* astreafest section */
+
 .card-astreafest::before {
     position: absolute;
     left: 0;
@@ -372,39 +447,208 @@ i.md-icon {
     background-color: var(--white-color);
     transform: rotate(45deg);
 }
+
+
 /* community section */
+
 .community_card-title {
     bottom: 0;
     left: 0;
 }
+
 .community_card-title p {
     font-size: 20px;
     font-family: 'Satoshi-Bold';
 }
+
 .community_card-title i {
     font-size: 1.5rem;
 }
+
 .community_card-img {
     height: 280px;
     width: 190px;
     object-fit: cover;
 }
+
+
 /* modals section */
+
 .modal_tourism {
     background-color: var(--galaxy-color);
     color: var(--white-color);
 }
+
+
+/**
+ * COME RAGGIUNGERCI
+ */
+
+#earth {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: var(--bg-page-color);
+}
+
+#earth canvas {
+    mix-blend-mode: lighten;
+}
+
+
+/**
+ * Vertical line
+ */
+
+.v-line-reachus {
+    position: absolute;
+    height: 127%;
+    width: 5px;
+    inset: 0;
+    top: -125px;
+    background-color: var(--white-color);
+    z-index: -1;
+}
+
+
+/**
+   * Card title fix width
+   */
+
+.card-reachus:first-child h2,
+.card-reachus:nth-child(3) h2 {
+    max-width: 80%;
+}
+
+
+/**
+ * Dot step to reach us
+ */
+
+.card-reachus::before {
+    content: '';
+    position: absolute;
+    top: 70px;
+    left: -12.5px;
+    width: 25px;
+    height: 25px;
+    border: 4px solid var(--white-color);
+    border-radius: 100%;
+    background-color: var(--black-color);
+}
+
+.card-reachus:nth-child(3)::before {
+    top: 63px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+}
+
+.reachus-stat {
+    z-index: 1;
+    height: 100%;
+}
+
+.reachus-triangle {
+    z-index: -1;
+}
+
+#reachus-stat-carousel .carousel-item {
+    height: 300px;
+}
+
+.bg-landing-mars {
+    width: 100%;
+    height: 415px;
+    background-color: var(--bg-page-color);
+    background-blend-mode: lighten;
+    background-image: url('../img/mars_landing.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+/**
+ * ASTREAFEST
+ */
+
+.nav-wrapper-astreafest.fixed {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-page-color);
+    z-index: 1;
+}
+
+.nav-wrapper-astreafest.fixed .nav-pills {
+    padding: 0 31px;
+}
+
+.event-day strong {
+    background-color: var(--bg-page-color);
+    z-index: 1;
+}
+
+.event-day::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: calc(50% - 1px);
+    background-color: var(--orange-color);
+    z-index: -1;
+}
+
+
 /*
-    Mobile style
+    Desktop style
 */
 
 @media only screen and (min-width: 992px) {
-    body {
-        background-image: url('../img/bg.jpg');
+    .bg-dotted {
+        background-image: url('../img/bg.svg');
         background-repeat: repeat-y;
-        background-size: 100%;
+        background-size: 3%;
+    }
+    .indentation-left {
+        padding-left: 9rem;
+    }
+    .indentation-right {
+        padding-right: 9rem;
+    }
+    /**
+   * Vertical line
+   */
+    .v-line-reachus {
+        margin: 0 auto;
+        height: 120%;
+    }
+    /**
+   * Card title fix width
+   */
+    .card-reachus:first-child h2,
+    .card-reachus:nth-child(3) h2 {
+        max-width: 80%;
+        text-indent: 40%;
+    }
+    .card-reachus:first-child::before {
+        left: unset;
+        right: -12.5px;
+    }
+    .card-reachus:nth-child(2)::before {
+        left: -12.5px;
+        right: unset;
+    }
+    .card-reachus:nth-child(3)::before {
+        left: unset;
+        right: -20px;
     }
 }
+
 @media screen and (max-device-width: 992px) {
     h3 {
         font-size: 26px;
@@ -437,10 +681,12 @@ i.md-icon {
         right: -13vw;
         z-index: 5;
     }
-    .navbar li:hover, .navbar li.active {
+    .navbar li:hover,
+    .navbar li.active {
         border: 0;
     }
-    .navbar li:hover::after, .navbar li.active::after {
+    .navbar li:hover::after,
+    .navbar li.active::after {
         content: none;
     }
     .home-card-triangle {
@@ -463,7 +709,7 @@ i.md-icon {
         flex-direction: column-reverse;
     }
     .footer_bottom-el .justify-content-end {
-        justify-content: center!important;
+        justify-content: center !important;
     }
     .footer-page .footer_btn-subscribe {
         text-align: center;
@@ -474,13 +720,16 @@ i.md-icon {
     #home_carouselCommunity .carousel-item {
         min-height: 200px;
     }
-    .card-triangle_element, .obs-tourism_card-event {
+    .card-triangle_element,
+    .obs-tourism_card-event {
         margin-left: 0;
         border-radius: 0;
         margin-top: -7rem;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
-    .card-triangle_right .card-triangle_element, .card-triangle_element, .obs-tourism_card-event {
+    .card-triangle_right .card-triangle_element,
+    .card-triangle_element,
+    .obs-tourism_card-event {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     }
     .obs-tourism_card-event h2 {
