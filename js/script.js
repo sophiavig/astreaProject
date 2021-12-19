@@ -15,7 +15,7 @@ function runOnScroll() {
     } else {
         head.style.backgroundColor = "transparent";
     }    
-};
+}
 window.addEventListener("scroll", runOnScroll);
 
 function closeMenu() {
