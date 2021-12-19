@@ -313,14 +313,6 @@ i.md-icon {
     transform: rotate(45deg);
 }
 
-.indentation-left {
-    padding-left: 9rem;
-}
-
-.indentation-right {
-    padding-right: 9rem;
-}
-
 .capt-img p {
     background-color: black;
     opacity: 55%;
@@ -621,6 +613,12 @@ i.md-icon {
         background-image: url('../img/bg.svg');
         background-repeat: repeat-y;
         background-size: 3%;
+    }
+    .indentation-left {
+        padding-left: 9rem;
+    }
+    .indentation-right {
+        padding-right: 9rem;
     }
     /**
    * Vertical line
