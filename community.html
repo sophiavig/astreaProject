@@ -77,19 +77,22 @@
 		</div>
 	</div>
 	<div class="container mt-n5">
-		<div class="d-flex justify-content-between overflow-auto" id="myTab" role="tablist">
-			<div class="position-relative community_card mr-2" role="presentation">
-				<a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
-					<img src="img/astronomy.jpg" class="community_card-img">
-					<div class="position-absolute community_card-title p-3 text-light">
-						<i class="bi bi-moon-stars"></i>
-						<p class="text-uppercase mt-2">Astronomia</p>
+		<ul class="nav nav-pills d-flex justify-content-between overflow-auto" id="pills-tab" role="tablist">
+			<li role="presentation">
+				<a class="active" id="astronomia-tab" data-toggle="pill" href="#astronomia" role="tab" aria-controls="pills-astronomia" aria-selected="true">
+					<div class="position-relative community_card mr-2">
+						<img src="img/astronomy.jpg" class="community_card-img">
+						<div class="position-absolute community_card-title p-3 text-light">
+							<i class="bi bi-moon-stars"></i>
+							<p class="text-uppercase mt-2">Astronomia</p>
+						</div>
+
 					</div>
 
 				</a>
-			</div>
-			<div class="position-relative community_card mr-2" role="presentation">
-				<a  id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+			</li>
+			<li class="position-relative community_card mr-2" role="presentation">
+				<a id="robotica-tab" data-toggle="pill" href="#robotica" role="tab" aria-controls="pills-robotica" aria-selected="false">
 					<img src="img/card-robotics.jpg" class="community_card-img">
 					<div class="position-absolute community_card-title p-3 text-light">
 						<i class="bi bi-robot"></i>
@@ -97,88 +100,55 @@
 					</div>
 
 				</a>
-			</div>
-			<div class="position-relative community_card mr-2">
-				<img src="img/card-computer-science.jpg" class="community_card-img">
-				<div class="position-absolute community_card-title p-3">
-					<i class="bi bi-pc-display-horizontal"></i>
-					<p class="text-uppercase mt-2">Informatica</p>
-				</div>
-			</div>
-			<div class="position-relative community_card mr-2">
-				<img src="img/card-meteo.jpg" class="community_card-img">
-				<div class="position-absolute community_card-title p-3">
-					<i class="bi bi-umbrella"></i>
-					<p class="text-uppercase mt-2">Meteorologia</p>
-				</div>
-			</div>
-			<div class="position-relative community_card">
-				<img src="img/card-chemiestry.jpg" class="community_card-img">
-				<div class="position-absolute community_card-title p-3">
-					<i class="bi bi-moon-stars"></i>
-					<p class="text-uppercase mt-2">Chimica</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tab-content">
-		<div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">descrizione tab
-		</div>
-		<div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">eventi tab</div>
-	</div>
-
-	<div class="my-5">
-		<div class="container-fluid pl-5">
-			<div class="obs-tourism_card-event ml-5 my-lg-5 my-3 pb-5 pb-lg-0">
-				<div class="card-event_element py-3 py-md-0">
-					<div class="card-event_description py-lg-4 row">
-						<div class="col-lg-10">
-							<h6>Descrizione</h6>
-							<p class="mb-lg-5">Questa Community è principalmente costituita da grandi appassionati di astri e galassie. Studiare le costellazioni,
-								osservare corpi celesti e scoprire gli oggetti che formano il nostro universo sono solo alcune delle incredibili attività di cui questa
-								community si occupa. Se questa fantastica scienza ti appassiona non perdere l’opportunità di unirti a questo gruppo e di restare aggiornato
-								con gli eventi e le attività che essso organizza.
-							</p>
-						</div>
-						<div class="col-lg-12">
-							<div class="mt-3 mt-lg-0 text-center text-lg-left">
-								<button class="button-base button-secondary py-2 px-5"
-										data-toggle="modal"
-										data-target="#modalPrenotaObservatory">Unisciti</button>
-							</div>
-
-						</div>
+			</li>
+			<li class="position-relative community_card mr-2" role="presentation">
+				<a id="informatica-tab" data-toggle="pill" href="#informatica" role="tab" aria-controls="pills-informatica" aria-selected="false">
+					<img src="img/card-computer-science.jpg" class="community_card-img">
+					<div class="position-absolute community_card-title p-3 text-light">
+						<i class="bi bi-pc-display-horizontal"></i>
+						<p class="text-uppercase mt-2">Informatica</p>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-12 mb-lg-4 mb-3">
-					<div
-						class="card-astreafest border-bottom border-light position-relative mb-4">
-						<div class="ml-lg-5">
-							<h3>Rosso di sera
-								<i class="bi bi-moon-stars text-orange-color"></i>
-							</h3>
-							<p class="mb-lg-3">Osservazione collettiva e studio del fenomeno
-								astronomico della luna rossa.</p>
-
-							<div class="d-lg-flex justify-content-between">
-								<div class="mx-auto mx-lg-0 mb-3">
-									<p class="mb-1 text-small">
-										<i class="bi bi-calendar"></i>
-										<span>Venerdì 28 gennaio</span>
-									</p>
-									<p class="mb-1 text-small">
-										<i class="bi bi-clock"></i>
-										<span>20:00 - 23:00</span>
-									</p>
-
-								</div>
-								<div class="my-3 my-lg-0 text-center text-lg-left">
-									<button
-										class="button-base button-secondary py-2 px-5">Partecipa</button>
+				</a>
+			</li>
+			<li class="position-relative community_card mr-2" role="presentation">
+				<a id="meteorologia-tab" data-toggle="pill" href="#meteorologia" role="tab" aria-controls="pills-meteorologia" aria-selected="false">
+					<img src="img/card-meteo.jpg" class="community_card-img">
+					<div class="position-absolute community_card-title p-3 text-light">
+						<i class="bi bi-umbrella"></i>
+						<p class="text-uppercase mt-2">Meteorologia</p>
+					</div>
+				</a>
+			</li>
+			<li class="position-relative community_card" role="presentation">
+				<a id="chimica-tab" data-toggle="pill" href="#chimica" role="tab" aria-controls="pills-chimica" aria-selected="false">
+					<img src="img/card-chemiestry.jpg" class="community_card-img">
+					<div class="position-absolute community_card-title p-3 text-light">
+						<i class="bi bi-moon-stars"></i>
+						<p class="text-uppercase mt-2">Chimica</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="tab-content my-5" id="pills-tabContent">
+		<div class="tab-pane fade show active" id="astronomia" role="tabpanel" aria-labelledby="astronomia-tab">
+			<div class="container-fluid pl-5">
+				<div class="obs-tourism_card-event ml-5 my-lg-5 my-3 pb-5 pb-lg-0 rounded-0">
+					<div class="card-event_element py-3 py-md-0">
+						<div class="card-event_description py-lg-4 row">
+							<div class="col-lg-10">
+								<h6 class="w-50 border-bottom pl-lg-5 pb-2 text-uppercase">Descrizione</h6>
+								<p class="mb-lg-5 pl-lg-5">Questa Community è principalmente costituita da grandi appassionati di astri e galassie. Studiare le costellazioni,
+									osservare corpi celesti e scoprire gli oggetti che formano il nostro universo sono solo alcune delle incredibili attività di cui questa
+									community si occupa. Se questa fantastica scienza ti appassiona non perdere l’opportunità di unirti a questo gruppo e di restare aggiornato
+									con gli eventi e le attività che essso organizza.
+								</p>
+							</div>
+							<div class="col-lg-6 pl-lg-5">
+								<div class="mt-3 mt-lg-0 text-center text-lg-left">
+									<button class="button-base button-secondary py-2 px-5"
+											data-toggle="modal"
+											data-target="#modalPrenotaObservatory">Unisciti</button>
 								</div>
 
 							</div>
@@ -186,7 +156,45 @@
 					</div>
 				</div>
 			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-12 mb-lg-4 mb-3">
+						<div class="card-astreafest border-bottom border-light position-relative mb-4">
+							<div class="ml-lg-5">
+								<h3>Rosso di sera
+									<i class="bi bi-moon-stars text-orange-color"></i>
+								</h3>
+								<p class="mb-lg-3">Osservazione collettiva e studio del fenomeno
+									astronomico della luna rossa.</p>
+
+								<div class="d-lg-flex justify-content-between">
+									<div class="mx-auto mx-lg-0 mb-3">
+										<p class="mb-1 text-small">
+											<i class="bi bi-calendar"></i>
+											<span>Venerdì 28 gennaio</span>
+										</p>
+										<p class="mb-1 text-small">
+											<i class="bi bi-clock"></i>
+											<span>20:00 - 23:00</span>
+										</p>
+
+									</div>
+									<div class="my-3 my-lg-0 text-center text-lg-left">
+										<button
+												class="button-base button-secondary py-2 px-5">Partecipa</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="tab-pane fade" id="robotica" role="tabpanel" aria-labelledby="robotica-tab">robotica tab</div>
+		<div class="tab-pane fade" id="informatica" role="tabpanel" aria-labelledby="informatica-tab">informatica tab</div>
+		<div class="tab-pane fade" id="meteorologia" role="tabpanel" aria-labelledby="meteorologia-tab">meteorologia tab</div>
+		<div class="tab-pane fade" id="chimica" role="tabpanel" aria-labelledby="chimica-tab">chimica tab</div>
 	</div>
 	<footer>
 		<div class="footer-page position-relative">

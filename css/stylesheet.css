@@ -81,7 +81,7 @@ h1 {
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: -1px;
 }
 
@@ -450,7 +450,6 @@ i.md-icon {
 
 
 /* community section */
-
 .community_card-title {
     bottom: 0;
     left: 0;
@@ -469,6 +468,16 @@ i.md-icon {
     height: 280px;
     width: 190px;
     object-fit: cover;
+}
+.community_card .community_card-img {
+    border: 2px solid transparent;
+    transition: all .2s ease-in-out;
+}
+a:hover .community_card{
+    transform: scale(1.1);
+    border-color: var(--orange-color);
+}
+a:hover .community_card .community_card-img, a.active .community_card .community_card-img {
 }
 
 
@@ -613,6 +622,8 @@ i.md-icon {
         background-image: url('../img/bg.svg');
         background-repeat: repeat-y;
         background-size: 3%;
+        background-attachment: fixed;
+        background-position: 4rem 0;
     }
     .indentation-left {
         padding-left: 9rem;
