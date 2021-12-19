@@ -409,19 +409,20 @@ i.md-icon {
 
 .service_title {
     position: absolute;
-    bottom: 55%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     z-index: auto;
+    color: white;
 }
 
-.tourism:hover,
-.obs:hover {
+.link-img:hover img {
     filter: grayscale(100%);
 }
 
-.tourism a:hover,
-.obs a:hover {
+.link-img:hover h4 {
     font-weight: bolder;
+    color: var(--orange-color);
 }
 
 
@@ -612,7 +613,7 @@ i.md-icon {
 
 
 /*
-    Mobile style
+    Desktop style
 */
 
 @media only screen and (min-width: 992px) {
